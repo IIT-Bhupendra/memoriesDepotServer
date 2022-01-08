@@ -15,6 +15,10 @@ dotenv.config();
 
 app.use("/posts", postRoutes);
 
+app.get("/", (req, res) => {
+  res.send("Hello This is the landing page");
+});
+
 // Connecting to the database MongoDB Atlas
 const PORT = process.env.PORT || 5000;
 
