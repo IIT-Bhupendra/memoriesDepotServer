@@ -1,6 +1,9 @@
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import User from "../models/user.js";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 export const signin = async (req, res) => {
   const { email, password } = req.body;
@@ -21,7 +24,7 @@ export const signin = async (req, res) => {
 
     const token = jwt.sign(
       { email: existingUser.email, id: existingUser._id },
-      "SECRET_STRING",
+      process.env.SECRET_STRING,
       { expiresIn: "1h" }
     );
 
@@ -53,7 +56,7 @@ export const signup = async (req, res) => {
 
     const token = jwt.sign(
       { email: result.email, id: result._id },
-      "SECRET_STRING",
+      process.env.SECRET_STRING,
       {
         expiresIn: "1h",
       }

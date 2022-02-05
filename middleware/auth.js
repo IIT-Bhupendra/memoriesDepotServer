@@ -1,4 +1,7 @@
 import jwt, { decode } from "jsonwebtoken";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 // How middlewares works
 // if you click upon a like button => auth middleware() => like controller...
@@ -12,7 +15,8 @@ const auth = async (req, res, next) => {
     let decodedData;
 
     if (token && isCustomAuth) {
-      decodedData = jwt.verify(token, "SECRET_STRING");
+      const SECRET_STRING = process.env.SECRET_STRING;
+      decodedData = jwt.verify(token, SECRET_STRING);
       req.userId = decodedData?.id;
       console.log(decodedData);
     } else {
