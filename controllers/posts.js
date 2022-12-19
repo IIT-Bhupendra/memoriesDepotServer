@@ -12,7 +12,6 @@ export const getPosts = async (req, res) => {
 };
 
 // export const getPosts = (req, res) => {
-
 //   res.send("<h1> It's Working Fine</h1>");
 // };
 
