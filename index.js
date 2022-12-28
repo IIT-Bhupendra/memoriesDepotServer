@@ -14,13 +14,6 @@ app.use(cors());
 
 dotenv.config();
 
-app.use("/posts", postRoutes);
-app.use("/user", userRoutes);
-
-app.get("/", (req, res) => {
-  res.send("Hello This is the landing page");
-});
-
 // Connecting to the database MongoDB Atlas
 const PORT = process.env.PORT || 5000;
 
@@ -33,3 +26,11 @@ mongoose
     app.listen(PORT, () => console.log(`Server is Running at ${PORT}`))
   )
   .catch((error) => console.log(error.message));
+
+
+app.use("/posts", postRoutes);
+app.use("/user", userRoutes);
+
+app.get("/", (req, res) => {
+  res.send("Hello This is the landing page");
+});
