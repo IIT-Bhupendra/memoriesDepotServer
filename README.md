@@ -34,15 +34,17 @@ Hurray, your memory has been created/added to our Memories Depot.
 
 ## 🏗️ Development of Memories Depot Platform
 
-<img align="right" src="https://github.com/tomchen/stack-icons/blob/master/logos/react.svg" alt="react" width="80" height="80"/>
-<img align="right" src="https://github.com/tomchen/stack-icons/blob/master/logos/express.svg" alt="react" width="80" height="80"/>
-<img align="right" src="https://github.com/tomchen/stack-icons/blob/master/logos/mongodb.svg" alt="react" width="80" height="80"/>
-<img align="right" src="https://github.com/tomchen/stack-icons/blob/master/logos/nodejs.svg" alt="react" width="80" height="80"/>
+<img align="right" src="https://github.com/tomchen/stack-icons/blob/master/logos/react.svg" alt="react" width="60" height="60"/>
+<img align="right" src="https://github.com/tomchen/stack-icons/blob/master/logos/express.svg" alt="react" width="60" height="60"/>
 
 A **fullstack single page web application** based on **MERN** stack.
 
 - developed frontend with using ReactJs and Material UI.
 - integrated **Restful API's** for pulling down memories content from the server.
+
+<img align="right" src="https://github.com/tomchen/stack-icons/blob/master/logos/mongodb.svg" alt="react" width="60" height="60"/>
+<img align="right" src="https://github.com/tomchen/stack-icons/blob/master/logos/nodejs.svg" alt="react" width="60" height="60"/>
+
 - for authentication while signup/login we used jwt/google API based on user choice.
 - redux is used to maintain a central state across the application.
 
