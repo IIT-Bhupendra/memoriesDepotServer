@@ -6,7 +6,7 @@
 
 Welcome to Memories Depot, a platform for sharing and cataloguing your special memories. With our user-friendly interface, you can easily upload and share your memories with a title, description, and relevant tags. You can also browse through the memories of other users and also like thier memories as well.
 
-![memories-depot-screencap](./src/images/homepage.png)
+![memories-depot-screencap](https://github.com/IIT-Bhupendra/memoriesDepotClient/blob/main/src/images/homepage.png?raw=true)
 
 You just need to follow simple steps to use **Memories Depot:**
     
@@ -17,8 +17,8 @@ It's as simple as that. I tried to keep it clean, simple and easy to use.
 
 ## ✍️ Creating Memories at Memories Depot
 <div style="float">
-    <img src="./src/images/creating-memory.png" width="48%"/>
-    <img align="right" style="margin-left: 10px" src="./src/images/editing-memory.png" width="48%"/>
+    <img src="https://github.com/IIT-Bhupendra/memoriesDepotClient/blob/main/src/images/creating-memory.png?raw=true" width="48%"/>
+    <img align="right" src="https://github.com/IIT-Bhupendra/memoriesDepotClient/blob/main/src/images/editing-memory.png?raw=true" width="48%"/>
 </div>
 <br />
 
