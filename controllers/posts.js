@@ -3,7 +3,7 @@ import PostMessage from "../models/postMessage.js";
 
 export const getPosts = async (req, res) => {
   try {
-    const postMessages = await PostMessage.find().sort({_id: -1}).slice(0, 5);
+    const postMessages = await PostMessage.find().sort({_id: -1}).limit(5);
     res.status(200).json(postMessages);
   } catch (error) {
     res.status(404).json({ message: "no messages found" });
