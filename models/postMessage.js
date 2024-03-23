@@ -1,20 +1,23 @@
 import mongoose from "mongoose";
 
+const Asset = {
+  public_id: String,
+  url: String,
+}
+
 const postSchema = mongoose.Schema({
   title: String,
   message: String,
   name: String,
   creator: String,
   tags: [String],
-  selectedFile: String,
-  likes: {
-    type: [String],
-    default: [],
+  // selectedFile: String,
+  assets: {
+    images: { type: [Asset], default: [] },
+    videos: { type: [Asset], default: [] }
   },
-  createdAt: {
-    type: Date,
-    default: new Date(),
-  },
+  likes: { type: [String], default: [] },
+  created_at: { type: Date, default: new Date() }
 });
 
 const postMessage = mongoose.model("postMessage", postSchema);

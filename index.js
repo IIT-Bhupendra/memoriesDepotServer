@@ -15,7 +15,9 @@ app.use(cors());
 dotenv.config();
 
 // Connecting to the database MongoDB Atlas
-const PORT = process.env.PORT || 5000;
+// const PORT = process.env.PORT || 5000;
+const PORT = 5000;
+
 
 mongoose
   .connect(process.env.CONNECTION_URL, {
@@ -27,7 +29,9 @@ mongoose
   )
   .catch((error) => console.log(error.message));
 
-
+app.use("/status", (req, res) => {
+  res.send("All OK!! Server is Running");
+});
 app.use("/posts", postRoutes);
 app.use("/user", userRoutes);
 
